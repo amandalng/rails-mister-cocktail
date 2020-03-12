@@ -1,0 +1,4 @@
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description, label: 'Description', error: 'Description is mandatory, please specify one' %>
+  <%= f.button :submit %>
+<% end %>
