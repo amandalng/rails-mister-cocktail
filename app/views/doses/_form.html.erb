@@ -1,5 +1,5 @@
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description, label: 'Description', error: 'Description is mandatory, please specify one' %>
   <%= f.association :ingredient %>
-  <%= f.button :submit %>
+  <%= f.button :submit, class: "btn btn-dark btn-block" %>
 <% end %>

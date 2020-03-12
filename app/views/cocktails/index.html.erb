@@ -1,8 +1,20 @@
 <h1>All Cocktails</h1>
 
-<ul>
-<% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail)  %> | <%= link_to "Delete", cocktail_path(cocktail), method: :delete, data: {confirm: "Are you sure?"} %></li>
-<% end %>
-</ul>
-<%= link_to 'Add a cocktail', new_cocktail_path  %>
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-6">
+      <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.img_url %>)">
+        <div>
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail)  %></h2>
+          <h2><%= link_to cocktail_path(cocktail), method: :delete, data: {confirm: "Are you sure?"} do %>
+              <i class="far fa-times-circle"></i>
+            <% end %>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
