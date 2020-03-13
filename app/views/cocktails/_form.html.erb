@@ -1,5 +1,5 @@
 <%= simple_form_for @cocktail do |f| %>
   <%= f.input :name, label: 'Cocktail Name', error: 'Name is mandatory, please specify one' %>
-  <%= f.input :img_url, label: 'Image URL' %>
+  <%= f.input :photo, as: :file %>
   <%= f.button :submit, class: "btn btn-dark btn-block" %>
 <% end %>
