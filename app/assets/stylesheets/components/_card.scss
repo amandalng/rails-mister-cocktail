@@ -12,6 +12,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-top: 20px;
   margin-bottom: 24px;
+  position: relative;
 
   &>div {
     text-align: center;
@@ -25,6 +26,9 @@
   .fa-times-circle {
     transition: .5s transform ease;
     color: pink;
+    position: absolute;
+    top: 8px;
+    right: 8px;
   }
 
   .fa-times-circle:hover {
