@@ -2,6 +2,7 @@
   "name": "rails-mister-cocktail",
   "private": true,
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "@rails/webpacker": "4.2.2",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
